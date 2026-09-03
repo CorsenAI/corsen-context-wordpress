@@ -6,7 +6,7 @@ The WordPress administrator controls which post types, paths, and tools are
 exposed.
 
 [Install from WordPress.org](https://wordpress.org/plugins/corsen-context/) ·
-[Download plugin ZIP](https://github.com/CorsenAI/corsen-context-wordpress/releases/download/v1.5.15/corsen-context-1.5.15.zip) ·
+[Download plugin ZIP](https://github.com/CorsenAI/corsen-context-wordpress/releases/download/v1.5.16/corsen-context-1.5.16.zip) ·
 [Standalone source](https://github.com/CorsenAI/corsen-context-wordpress) ·
 [Live demo](https://webmcp.corsen.ai)
 
@@ -28,7 +28,7 @@ After enabling the public surfaces, run:
 npx @corsenai/corsen-context-cli doctor --url https://www.example.com
 ```
 
-The current release is 1.5.15. The live flagship reports its installed version
+The current release is 1.5.16. The live flagship reports its installed version
 in its MCP `initialize` response; confirm the installed version in WordPress
 before comparing behavior.
 
