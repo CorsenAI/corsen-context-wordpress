@@ -1,0 +1,33 @@
+{
+  "name": "corsenai/corsen-context",
+  "description": "Publish selected WordPress content through llms.txt and a read-only MCP-style endpoint.",
+  "type": "wordpress-plugin",
+  "license": "MIT",
+  "homepage": "https://github.com/CorsenAI/corsen-context",
+  "require": {
+    "php": ">=8.0"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.10",
+    "wp-coding-standards/wpcs": "^3.1",
+    "phpcompatibility/phpcompatibility-wp": "^2.1",
+    "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+    "phpunit/phpunit": "^9.6",
+    "yoast/phpunit-polyfills": "^2.0"
+  },
+  "config": {
+    "platform": {
+      "php": "8.0.0"
+    },
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "scripts": {
+    "lint": "phpcs",
+    "lint:fix": "phpcbf",
+    "test": "phpunit",
+    "test:unit": "phpunit --exclude-group integration",
+    "test:integration": "phpunit -c phpunit-integration.xml.dist --group integration"
+  }
+}
